@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FilmMasterMember.master.cs" Inherits="FilmMasterMember" %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Serendipity</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/modernizr-2.7.1.js"></script>
+
+    <style type="text/css">
+        .auto-style1 {
+            position: absolute;
+            top: 162px;
+            left: 118px;
+            width: 710px;
+            height: 55px;
+        }
+
+        .auto-style2 {
+            color: #000000;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="Members.aspx">
+                            <img src="img/logo.svg" alt="Logo"></a>
+                    </div>
+                    <div class="col-xs-6 signin text-right navbar-nav">
+                        <a href="MemberFriends.aspx" class="scroll">Friends</a>&nbsp; &nbsp;<a href="MemberProfile.aspx">Profile</a>&nbsp; &nbsp;
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="auto-style1">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </header>
+    </form>
+    <footer>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 margin-20">
+                    <ul class="list-inline social">
+                        <li>Connect with us on</li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 text-right">
+                    <p>
+                        <small>Copyright &copy; 2016. All rights reserved.
+                            <br>
+                            Created by <a href="Lachlan" class="auto-style2">Lachlan</a>
+                        </small>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
